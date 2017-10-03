@@ -1,0 +1,85 @@
+html, body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Open Sans', sans-serif;
+   background-color: #ff8080;
+}
+
+#topbar {
+   background-color: #990000;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+h1 {
+   margin: 0;
+   color: #fff;
+}
+
+#perfil {
+   background-color: #cc0000;
+   padding: 60px 15px 20px 20px;
+}
+
+.foto-perfil {
+   float: left;
+   margin-right: 20px;
+}
+
+main header::after, .pomba-header::after {
+   content: '';
+   display: block;
+   clear: both;
+}
+
+article header {
+/*   background-color: #fff; */
+}
+
+.pomba {
+   border-width: 2px 3px;
+   border-style: dashed;
+   border-color: #444444;
+   border-radius: 15px;
+   margin-bottom: 10px;
+   padding: 10px 20px;
+   display: flex;
+   align-items: center;
+}
+
+.foto-seguindo {
+   flex-basis: content;
+   padding: 5px 15px;
+}
+
+.pomba-texto {
+   flex: 1;
+}
+
+.pomba-texto p:first-child {
+   font-size: 80%;
+}
+
+#feed {
+   width: 700px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #fff;
+}
+
+#logout-panel {
+   background-color: #e60000;
+   padding: 5px;
+}
+
+#logout-panel a:link, #logout-panel a:visited {
+   color: #000;
+   text-decoration: none;
+}
+
+#logout-panel a:active, #logout-panel a:hover {
+   text-decoration: underline;
+}
+
+
