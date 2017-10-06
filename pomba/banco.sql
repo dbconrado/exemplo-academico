@@ -34,7 +34,12 @@ INSERT INTO seguidor VALUES
 (DEFAULT, 'amanda', 'andre'),
 (DEFAULT, 'amanda', 'karine');
 
---SELECT se.seguido, po.texto, po.data_hora
---FROM pomba po
---INNER JOIN seguidor se ON (po.username = se.seguido)
---WHERE se.seguidor = 'amanda';
+CREATE TABLE curtida (
+   username varchar(30) not null,
+   id_pomba int not null,
+   data_hora timestap not null default current_timestamp,
+   primary key(username, id_pomba),
+   foreign key (username) references pomber (username),
+   foreign key (id_pomba) references pomba (id)
+);
+
