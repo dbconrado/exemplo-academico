@@ -1,0 +1,10 @@
+.caixa {
+   background-color: #81ff6b;
+   border: 2pt dashed black;
+   padding: 1.5em;
+   display: none;
+}
+
+.visivel {
+   display: block;
+}

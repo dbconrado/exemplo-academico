@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Mostrar Div</title>
+   <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+   <p>Clique no botão para ver a mensagem</p>
+   <button onclick="mostrar()">Ver mensagem</button>
+   <div class="caixa">Bem-vindo ao Javascript!</div>
+   <script type="text/javascript">
+      function mostrar() {
+         var div = document.querySelector('div');
+         div.classList.toggle('visivel');
+      }
+   </script>
+</body>
+</html>
