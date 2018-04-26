@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dado</title>
+</head>
+<body>
+	<button id="botao">Jogar Dado</button>
+	<img src="" alt="" id="face">
+
+	<script type="text/javascript">
+		function jogarDado() {
+			return Math.floor(Math.random()*6)+1;
+		}
+
+		var botao = document.querySelector('#botao');
+		botao.onclick = function() {
+			var src = "img/face" + jogarDado() + ".png";
+			var face = document.querySelector('#face');
+			face.src = src;
+		}
+	</script>
+</body>
+</html>
