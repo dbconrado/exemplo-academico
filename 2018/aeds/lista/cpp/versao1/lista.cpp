@@ -1,4 +1,8 @@
 #include "lista.h"
+#include <string>
+#include <sstream>
+
+using namespace std;
 
 Lista::Lista() {
     cabeca = nullptr;
@@ -74,7 +78,9 @@ string Lista::montarListaEmString()
     while (x != nullptr)
     {
         resultado += "  ";
-        resultado += to_string(x->chave);
+        stringstream ss;
+        ss << x->chave;
+        resultado += ss.str();
         resultado += " => ";
         resultado += x->dado;
         resultado += "\n";
